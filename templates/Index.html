@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
 </head>
 <body>
-    <h1> {{ name }}</h1>
+    <h1>Willkommen zum {{ name }}</h1>
     <a href="{{ url_for('test')}}">Test</a>
+        <p>Gib deine Präferenzen ein und bekomme deinen Netflix Vorschlag.</p>
+        <form action="send.html" method="post">
+            <ul>
+                <li>
+                    <label for="eingabe1"> Eingabe 1
+                        <input id="eingabe1" type="text">
+                    <label/>
+                <li/>
+                <li>
+                    <label for="eingabe2"> Eingabe 2
+                        <input id="eingabe2" type="text">
+                    <label/>
+                <li/>
+                <li>
+                    <label for="eingabe3"> Eingabe 3
+                        <input id="eingabe3" type="text">
+                    <label/>
+                <li/>
+                <li>
+                    <button name="absenden" value="abgesendet" type="submit">Formular abschicken</button>
+                <li/>
+            </ul>
+        <form/>
 </body>
 </html>
