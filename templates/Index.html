@@ -9,28 +9,28 @@
 <body>
     <h1>Willkommen zum {{ name }}</h1>
     <a href="{{ url_for('test')}}">Test</a>
-        <p>Gib deine Präferenzen ein und bekomme deinen Netflix Vorschlag.</p>
-        <form action="send.html" method="post">
-            <ul>
-                <li>
-                    <label for="eingabe1"> Eingabe 1
-                        <input id="eingabe1" type="text">
-                    <label/>
-                <li/>
-                <li>
-                    <label for="eingabe2"> Eingabe 2
-                        <input id="eingabe2" type="text">
-                    <label/>
-                <li/>
-                <li>
-                    <label for="eingabe3"> Eingabe 3
-                        <input id="eingabe3" type="text">
-                    <label/>
-                <li/>
-                <li>
-                    <button name="absenden" value="abgesendet" type="submit">Formular abschicken</button>
-                <li/>
-            </ul>
-        <form/>
+        <p>Füge einen neuen Film deiner Watchlist hinzu.</p>
+        <form>
+              <div class="form-group">
+                <label for="FilmName">Wie heisst der Film?</label>
+                <input type="Film" class="form-control" id="FilmName" aria-describedby="NewFilm" placeholder="Filmname eingeben">
+              </div>
+              <div class="form-group">
+                <label for="Erscheinungsjahr">Wann ist der Film erschienen?</label>
+                <input type="Erscheinungsjahr" class="form-control" id="Erscheinungsjahr" placeholder="Erscheinungsjahr eingeben">
+              </div>
+              <div class="form-group">
+                <label for="Filmdauer">Wie lange ist die Laufzeit des Films?</label>
+                <input type="Filmdauer" class="form-control" id="Filmdauer" aria-describedby="Dauer" placeholder="Filmdauer eingeben">
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                      Film bereits gesehen
+                  </label>
+              </div>
+
+             <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 </body>
 </html>
