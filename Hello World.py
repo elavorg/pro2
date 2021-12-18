@@ -6,7 +6,11 @@ app = Flask("Netflix generator")
 
 @app.route("/generator")
 def watchlist_empfehlung():
-    return render_template('index.html', name="Netflix Generator")
+    return render_template('Filmerfassen.html', name="Netflix Generator")
+
+@app.route("/vorschlag")
+def watchlist_vorschlag():
+    return render_template('Filmvorschlag.html', vorschlag="Netflix Generator")
 
 @app.route("/test")
 def test():
