@@ -4,11 +4,11 @@ from flask import render_template
 app = Flask("Netflix generator")
 
 
-@app.route("/generator")
+@app.route("/erfassen")
 def watchlist_empfehlung():
-    return render_template('Filmerfassen.html', name="Netflix Generator")
+    return render_template('Filmerfassen.html', name="Netflix Filmgenerator")
 
-@app.route("/vorschlag")
+@app.route("/vorschlagen")
 def watchlist_vorschlag():
     return render_template('Filmvorschlag.html', vorschlag="Netflix Generator")
 
